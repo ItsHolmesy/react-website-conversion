@@ -1,0 +1,41 @@
+/* -------------------------------------------------------------------- */
+/* TESTIMONIALS */
+/* -------------------------------------------------------------------- */
+
+#section-references-testamonials {
+    display: flex;
+    justify-content: space-evenly;
+    background-size: cover;
+    color: #ebe7ef;
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 2.3rem;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 1rem;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}

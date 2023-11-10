@@ -1,0 +1,22 @@
+/* -------------------------------------------------------------------- */
+/* FEATURES */
+/* -------------------------------------------------------------------- */
+
+
+.section-intro .row {
+    align-items: center;
+
+}
+
+.section-intro .flex-column {
+    max-width: 40%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.section-intro .long-copy { margin-bottom: 30px; }
+
+.section-intro h3 { text-align: center; }

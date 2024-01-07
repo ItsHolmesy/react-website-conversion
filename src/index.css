@@ -106,7 +106,6 @@ h2:after {
     line-height: 145%;
 }
 
-/* --- COLUMNS --- */
 
 /* --- ICONS --- */
 
@@ -133,46 +132,40 @@ h2:after {
 }
 
 /* --- BUTTONS --- */
-.btn,
-.btn:visited {
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 300;
+
+
+.menu-nav {
+    max-width: 600px;
+    margin: 0 auto; /* Center the menu on the page */
+    display: flex;
+    justify-content: space-around; /* Adjust spacing between buttons */
+    padding: 10px; /* Add padding if necessary */
+}
+.menu-nav .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    height: 50px;
+}
+
+.btn-box button {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    font-size: 1.1rem;
+    color: #ebe7ef;
     text-decoration: none;
-    border-radius: 200px;
-    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
-}
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
 
-.btn-full,
-.btn-full:visited {
-    background-color: #572281;
-    border: 1px solid #572281;
-    color: #fff;
-    margin-right: 15px;
-}
-
-.btn-ghost,
-.btn-ghost:visited {
-    border: 1px solid #572281;
-    color: #572281;
-}
-
-.btn:hover,
-.btn:active { background-color: #7d3cb3; }
-
-.btn-full:hover,
-.btn-full:active { border: 1px solid #7d3cb3; }
-
-.btn-ghost:hover,
-.btn-full:active {
-    border: 1px solid #7d3cb3;
-    color: #fff;
-}
-
-button {
     cursor: pointer;
+    background: none;
     border: none;
     outline: none;
-    background: none;
 }

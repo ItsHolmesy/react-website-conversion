@@ -1,5 +1,5 @@
 import machinesImg from '../../assets/Logos/Machines_And_Men.svg';
-import telstraImg from '../../assets/Logos/telstra.png'
+import telstraImg from '../../assets/Logos/telstra.png';
 
 export const JOB_REFERENCES = [
     {

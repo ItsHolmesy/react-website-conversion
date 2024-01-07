@@ -3,15 +3,18 @@ import { useState } from "react";
 import Header from "./components/Header/Header";
 import Intro from "./components/Introduction/Intro";
 import Testamonials from "./components/Testamonials/Testamonials";
+import WorkExperience from "./components/Work Experience/workexperience";
 import Footer from "./components/Footer/Footer";
 import TabButton from "./components/TabButton";
+
 
 function App() {
     const [ selectedTopic, setSelectedTopic ] = useState(<Intro />);
 
     const topicContentMapping = {
         'intro': <Intro />,
-        'references': <Testamonials />
+        'references': <Testamonials />,
+        'work-experience': <WorkExperience />
     }
 
     function handleSelect(selectedButton) {
@@ -32,6 +35,12 @@ function App() {
                     <TabButton
                         isSelected={selectedTopic === 'references'}
                         onSelect={() => handleSelect('references')}
+                    >
+                        References
+                    </TabButton>
+                    <TabButton
+                        isSelected={selectedTopic === 'work-experience'}
+                        onSelect={() => handleSelect('work-experience')}
                     >
                         References
                     </TabButton>

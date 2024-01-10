@@ -39,3 +39,11 @@ cite img {
     margin-right: 10px;
     vertical-align: middle;
 }
+
+.references ul {
+    list-style-type: none;
+}
+
+.references li {
+    margin-top: 10px;
+}

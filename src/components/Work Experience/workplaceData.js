@@ -25,6 +25,5 @@ export const JOB_REFERENCES = [
         role: 'Operational Support Agent/Supervisor',
         location: 'Melbourne, Victoria',
         tenure: 'May 2021 - Ongoing',
-        description: '',
     },
 ];

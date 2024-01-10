@@ -20,11 +20,10 @@ export const JOB_REFERENCES = [
         description: '',
     },
     {
-    image: tImg,
-    title: 'Telstra 000',
-    role: 'Operational Support Agent/Supervisor',
-    location: 'Melbourne, Victoria',
-    tenure: 'May 2021 - Ongoing',
-    description: '',
+        image: tImg,
+        title: 'Telstra 000',
+        role: 'Operational Support Agent/Supervisor',
+        location: 'Melbourne, Victoria',
+        tenure: 'May 2021 - Ongoing',
     },
 ];

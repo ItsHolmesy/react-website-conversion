@@ -6,6 +6,7 @@ import Testamonials from "./components/Testamonials/Testamonials";
 import WorkExperience from "./components/Work Experience/workexperience";
 import TechStack from './components/TechStack/Techstack';
 import TabButton from "./components/Buttons/TabButton";
+import Tabs from "./components/Buttons/Tabs";
 
 
 function App() {
@@ -27,7 +28,39 @@ function App() {
             <Header />
             <main class='main-content'>
                 <section id="sections">
+                    <Tabs buttons={
+                        <div class='flex-row'>
+                                                <TabButton
+                                                    isSelected={selectedTopic === 'intro'}
+                                                    onSelect={() => handleSelect('intro')}
+                                                >
+                                                    Intro
+                                                </TabButton>
+                                                <TabButton
+                                                    isSelected={selectedTopic === 'references'}
+                                                    onSelect={() => handleSelect('references')}
+                                                >
+                                                    References
+                                                </TabButton>
+                                                <TabButton
+                                                    isSelected={selectedTopic === 'work-experience'}
+                                                    onSelect={() => handleSelect('work-experience')}
+                                                >
+                                                    Work Experience
+                                                </TabButton>
+                                                <TabButton
+                                                    isSelected={selectedTopic === 'tech-stack'}
+                                                    onSelect={() => handleSelect('tech-stack')}
+                                                >
+                                                    Tech Stack
+                                                </TabButton>
+                                            </div>
+                    }>
+                        {topicContentMapping[selectedTopic]}
+                    </Tabs>
+                    <menu>
 
+                    </menu>
                 </section>
             </main>
         </div>

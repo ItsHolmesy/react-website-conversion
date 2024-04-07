@@ -1,0 +1,25 @@
+@import url('https://css.gg/css?=|info');
+
+$intro-line-height: 1.5rem;
+
+.flex-row {
+    .intro {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+}
+
+p {
+    font-size: 0.975rem;
+    line-height: $intro-line-height
+}
+
+.text-box {
+    margin-top: 100px;
+    width: 50%;
+}
+
+.icon-intro {
+    margin-bottom: 25px;
+}

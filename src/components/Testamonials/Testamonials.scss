@@ -1,0 +1,21 @@
+.references {
+    ul {
+        list-style-type: none;
+        margin-top: 10em;
+
+        li {
+            margin-top: 0.5em;
+        }
+
+        cite {
+            font-size: 0.95rem;
+
+            img {
+                height: 125px;
+                border-radius: 50%;
+                margin-right: 10px;
+                vertical-align: middle;
+            }
+        }
+    }
+}

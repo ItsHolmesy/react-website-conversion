@@ -4,8 +4,8 @@ import Header from "./components/Header/Header";
 import Intro from "./components/Introduction/Intro";
 import Testamonials from "./components/Testamonials/Testamonials";
 import WorkExperience from "./components/Work Experience/workexperience";
-import Footer from "./components/Footer/Footer";
-import TabButton from "./components/TabButton";
+import TechStack from './components/TechStack/Techstack';
+import TabButton from "./components/Buttons/TabButton";
 
 
 function App() {
@@ -14,7 +14,8 @@ function App() {
     const topicContentMapping = {
         'intro': <Intro />,
         'references': <Testamonials />,
-        'work-experience': <WorkExperience />
+        'work-experience': <WorkExperience />,
+        'tech-stack': <TechStack />
     }
 
     function handleSelect(selectedButton) {
@@ -24,30 +25,11 @@ function App() {
     return (
         <div>
             <Header />
-            <main class='menu'>
-               <menu class='menu-nav'>
-                    <TabButton
-                        isSelected={selectedTopic === 'intro'}
-                        onSelect={() => handleSelect('intro')}
-                    >
-                        Intro
-                    </TabButton>
-                    <TabButton
-                        isSelected={selectedTopic === 'references'}
-                        onSelect={() => handleSelect('references')}
-                    >
-                        References
-                    </TabButton>
-                    <TabButton
-                        isSelected={selectedTopic === 'work-experience'}
-                        onSelect={() => handleSelect('work-experience')}
-                    >
-                        References
-                    </TabButton>
-                </menu>
-                {topicContentMapping[selectedTopic]}
+            <main class='main-content'>
+                <section id="sections">
+
+                </section>
             </main>
-            <Footer />
         </div>
     );
 }

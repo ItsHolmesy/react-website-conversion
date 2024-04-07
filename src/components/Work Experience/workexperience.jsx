@@ -1,7 +1,6 @@
+import './workexperience.scss';
 
-import './workexperience.css';
 
-import './workexperience.css'
 
 import WorkPlaces from './workplaces';
 
@@ -9,10 +8,10 @@ export default function WorkExperience() {
     return (
         <div>
             <section id="section-work-experience">
-                <div class="row">
+                <div class="flex-row">
                     <h2>My Experience</h2>
                 </div>
-                <div class="row">
+                <div class="flex-row">
                     <WorkPlaces />
                 </div>
             </section>

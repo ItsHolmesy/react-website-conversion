@@ -1,6 +1,6 @@
 export default function WorkPlaces({ image, title, location, tenure, description }) {
     return (
-        <div>
+        <>
             <div class="workplace-image"><img src={image} alt={title} /></div>
             <div class="workplace-info">
                 <h3>{title}</h3>
@@ -10,6 +10,6 @@ export default function WorkPlaces({ image, title, location, tenure, description
                 </ul>
                 <p>{description}</p>
             </div>
-        </div>
+        </>
     );
 }
